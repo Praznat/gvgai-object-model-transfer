@@ -410,6 +410,8 @@ public class StateObservation {
     public ArrayList<Observation>[] getFromAvatarSpritesPositions(Vector2d reference) {
         return model.getFromAvatarSpPositions(reference);
     }
+    
+    
 
     /**
      * Compares if this and the received StateObservation state are equivalent.

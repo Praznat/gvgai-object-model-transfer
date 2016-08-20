@@ -5,7 +5,7 @@ BasicGame
         trap > Immovable img=hell
 
     InteractionSet
-
+        avatar  EOS  > stepBack
         avatar wall > stepBack
         exit avatar > killSprite scoreChange=1
         avatar trap > killSprite scoreChange=-1

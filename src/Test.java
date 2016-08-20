@@ -47,8 +47,8 @@ public class Test
         //                               "sheriff", "chopper", "superman", "waitforbreakfast", "cakybaky"};
 
         //Training Set 6 (Validation CEEC 2015)
-        games = new String[]{"lasers2", "hungrybirds" ,"cookmepasta", "factorymanager", "raceBet2",
-                "intersection", "blacksmoke", "iceandfire", "gymkhana", "tercio"};
+        games = new String[]{"aliens", "chopper" ,"crossfire", "firecaster", "frogs",
+                "jaws", "missilecommand", "seaquest", "whackamole", "zelda"};
 
 
         //Other settings
@@ -57,16 +57,17 @@ public class Test
         int seed = new Random().nextInt();
 
         //Game and level to play
-        int gameIdx = 0;
-        int levelIdx = 0; //level names from 0 to 4 (game_lvlN.txt).
-        String game = gamesPath + games[gameIdx] + ".txt";
-        String level1 = gamesPath + games[gameIdx] + "_lvl" + levelIdx +".txt";
+        int gameIdx = 8;
+        int levelIdx = 1; //level names from 0 to 4 (game_lvlN.txt).
+        String gName = "zenpuzzle";//games[gameIdx];
+        String game = gamesPath + gName + ".txt";
+        String level1 = gamesPath + gName + "_lvl" + levelIdx +".txt";
 
         // 1. This starts a game, in a level, played by a human.
         ArcadeMachine.playOneGame(game, level1, recordActionsFile, seed);
 
         // 2. This plays a game in a level by the controller.
-        //ArcadeMachine.runOneGame(game, level1, visuals, sampleMCTSController, recordActionsFile, seed);
+//        ArcadeMachine.runOneGame(game, level1, visuals, sampleMCTSController, recordActionsFile, seed);
         //ArcadeMachine.runOneGame(game, level1, visuals, tester, recordActionsFile, seed);
 
         // 3. This replays a game from an action file previously recorded

@@ -1,6 +1,25 @@
 package core.game;
 
-import core.*;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Rectangle;
+import java.awt.event.WindowEvent;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Random;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
+import java.util.concurrent.ConcurrentHashMap;
+
+import core.SpriteGroup;
+import core.VGDLFactory;
+import core.VGDLRegistry;
+import core.VGDLSprite;
+import core.VGDLViewer;
 import core.competition.CompetitionParameters;
 import core.content.Content;
 import core.content.GameContent;
@@ -11,11 +30,12 @@ import ontology.Types;
 import ontology.avatar.MovingAvatar;
 import ontology.effects.Effect;
 import ontology.sprites.Resource;
-import tools.*;
-
-import java.awt.*;
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
+import tools.JEasyFrame;
+import tools.KeyHandler;
+import tools.KeyInput;
+import tools.KeyPulse;
+import tools.Pair;
+import tools.Vector2d;
 
 /**
  * Created with IntelliJ IDEA.

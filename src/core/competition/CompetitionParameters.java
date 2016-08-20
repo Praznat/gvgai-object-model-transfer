@@ -14,17 +14,17 @@ public class CompetitionParameters
     /**
      * Milliseconds allowed per controller action.
      */
-    public static int ACTION_TIME = 40;
+    public static int ACTION_TIME = 4000;
 
     /**
      * Milliseconds for controller disqualification, if it returns an action after this time.
      */
-    public static int ACTION_TIME_DISQ = 50;
+    public static int ACTION_TIME_DISQ = 5000;
 
     /**
      * Milliseconds allowed for controller initialization.
      */
-    public static int INITIALIZATION_TIME = 1000;
+    public static int INITIALIZATION_TIME = 100000;
 
     /**
      * Path to sprite images.
@@ -66,6 +66,9 @@ public class CompetitionParameters
      */
     public static final int KEY_INPUT = 0;
     public static final int KEY_PULSE = 1;
+
+    /** are we disqualifying at all? by alexbraylan */
+	public static final boolean DISQ = false;
 
     public static int KEY_HANDLER = KEY_INPUT;
 }

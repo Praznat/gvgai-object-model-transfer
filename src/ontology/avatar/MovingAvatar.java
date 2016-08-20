@@ -128,7 +128,7 @@ public class MovingAvatar extends VGDLSprite {
 
         Types.ACTIONS action = this.player.act(game.getObservation(), ect.copy());
 
-        if(ect.exceededMaxTime())
+        if(CompetitionParameters.DISQ && ect.exceededMaxTime())
         {
             long exceeded =  - ect.remainingTimeMillis();
 
