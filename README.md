@@ -4,7 +4,7 @@ This repo contains code used for the paper "Object-Model Transfer in the General
 
 gvgai
 =====
-The version of GVG-AI used here was cloned from https://github.com/EssexUniversityMCTS/gvga on September 27, 2015.
+The version of GVG-AI used here was cloned from https://github.com/EssexUniversityMCTS/gvgai on September 27, 2015.
 
 dependencies
 =====
